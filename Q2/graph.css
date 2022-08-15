@@ -1,0 +1,95 @@
+body {
+    text-align: center;
+}
+
+#graph-label {
+    text-align: center;
+}
+
+.wrapper {
+    width: 200px;
+    height: 420px;
+    margin: 10% auto auto;
+    text-align: center;
+    background-color: #F5F5F5;
+    display: inline-block;
+}
+
+.graph-container {
+    display: inline-block;
+    position: relative;
+    top: 5%;
+    margin: 0 4%;
+}
+
+.bar-label {
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.bar-wrapper {
+    background-color: white;
+    height: 300px;
+    width: 35px;
+    margin-top: 5%;
+    display: inline-block;
+    position: relative;
+}
+
+.bar {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    animation-fill-mode: forwards;
+    animation-iteration-count: 1;
+    animation-delay: 1s;
+    animation-duration: 4s;
+}
+
+#bar-30 {
+    animation-name: fillbar-30;
+}
+
+@keyframes fillbar-30 {
+    from {
+        background-color: white;
+        height: 0%;
+    }
+
+    to {
+        background-color: #CAC7C0;
+        height: 30%;
+    }
+}
+
+#bar-40 {
+    animation-name: fillbar-40;
+}
+
+@keyframes fillbar-40 {
+    from {
+        background-color: white;
+        height: 0%;
+    }
+
+    to {
+        background-color: #CAC7C0;
+        height: 40%;
+    }
+}
+
+#bar-80 {
+    animation-name: fillbar-80;
+}
+
+@keyframes fillbar-80 {
+    from {
+        background-color: white;
+        height: 0%;
+    }
+
+    to {
+        background-color: #CAC7C0;
+        height: 80%;
+    }
+}
